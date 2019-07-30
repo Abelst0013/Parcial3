@@ -49,7 +49,7 @@ bool empty(int x, int y)
 {
 	if (matrix[x][y] == 0)
 	{
-		matrix[x][y] == #;
+		matrix[x][y] == #; //Cambiar a numero
 		return true;
 	}
 	return false; 
@@ -59,7 +59,7 @@ bool mineselect(int x, int y)
 {
 	if (matrix[x][y] == 0)
 	{
-		matrix[x][y] == #;
+		matrix[x][y] == #; //Cambiar a numero
 		return true;
 	}
 	return false;
@@ -69,13 +69,13 @@ bool bandera(int x, int y)
 {
 	if (matrix[x][y] == 0)
 	{
-		matrix[x][y] == #;
+		matrix[x][y] == #; //Cambiar a numero 
 		return true; 
 	}
 	return false;
 }
 
-int main()
+int main()    //Necesito un while para seleccionar la opcion que se quiera ejecutar, ya sea seleccionar un espacio vacio, uno con bombas y otro para banderas.
 {
 	srand(time(NULL));
 	int pos1, pos2;
@@ -84,7 +84,7 @@ int main()
 	while (1)
 	{
 		Show();
-		cout << "Selecciona una coordenada: (#/#)"; cin >> pos1 >> pos2;
+		cout << "Selecciona una coordenada: (#/#)"; cin >> pos1 >> pos2; //Testeo 
 		if (empty(pos1, pos2))
 			Show();
 		else 
@@ -92,3 +92,4 @@ int main()
     }
 	cout << "Game Over" << endl; 
 }
+//Me falta definir que valor es que, e imprimir el tablero sin valores pero que ya existan valores dentro de el. 
